@@ -1,12 +1,15 @@
 import { darkTheme } from "../../constants/themes";
 import ErrorBoundary from "../ErrorBoundary/ErrorBoundary"
+import Layout from "../Layout/Layout";
 import ThemeProvider from "../ThemeProvider/ThemeProvider";
 
 const App = () => {
   return (
     <ErrorBoundary>
       <ThemeProvider theme={darkTheme}>
-        <h1>App</h1>
+        <Layout>
+          <p>Content</p>
+        </Layout>
       </ThemeProvider>
     </ErrorBoundary>
   )
