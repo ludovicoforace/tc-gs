@@ -14,6 +14,12 @@ export interface Theme {
   }
 }
 
+export interface Data {
+  cash_value: number
+  optin_URL: string
+  countdown_duration: string
+}
+
 export enum Contact {
   Email = 'temp@placeholder.com'
 }
