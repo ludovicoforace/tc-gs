@@ -1,6 +1,10 @@
+import ErrorBoundary from "../ErrorBoundary/ErrorBoundary"
+
 const App = () => {
   return (
-    <h1>App</h1>
+    <ErrorBoundary>
+      <h1>App</h1>
+    </ErrorBoundary>
   )
 }
 
