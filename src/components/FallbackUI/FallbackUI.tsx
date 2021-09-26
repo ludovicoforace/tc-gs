@@ -5,7 +5,7 @@ interface Props {
   errorCode: keyof typeof userErrors
 }
 
-export default ({ errorCode }: Props) => {
+const FallbackUI = ({ errorCode }: Props) => {
   const { name, message } = userErrors[errorCode]
 
   return (
@@ -17,3 +17,5 @@ export default ({ errorCode }: Props) => {
     </div>
   )
 }
+
+export default FallbackUI
