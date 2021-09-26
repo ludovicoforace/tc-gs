@@ -8,6 +8,7 @@ export interface Theme {
   bgs: {
     darker: string
     lighter: string
+    purple: string
   },
   colors: {
     text: string

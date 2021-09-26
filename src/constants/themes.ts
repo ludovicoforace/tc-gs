@@ -6,8 +6,9 @@ export const darkTheme = {
     small: '22px',
   },
   bgs: {
-    darker: '#2a2a2e',
-    lighter: '#38383d'
+    darker: '#020605',
+    lighter: '#38383d',
+    purple: '#c538e9'
   },
   colors: {
     text: '#f9f9fa'

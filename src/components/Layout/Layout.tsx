@@ -1,4 +1,5 @@
 import PageBoundaires from "../../styled/PageBoundary";
+import Header from "../Header/Header";
 
 interface Props {
   children: React.ReactChild | React.ReactChild[]
@@ -8,12 +9,11 @@ const Layout = ({ children }: Props) => (
   <>
     <header>
       <PageBoundaires>
-        <h1>Header</h1>
+        <Header />
       </PageBoundaires>
     </header>
     <PageBoundaires>
         {children}
-      <footer>Footer</footer>
     </PageBoundaires>
   </>
 )
