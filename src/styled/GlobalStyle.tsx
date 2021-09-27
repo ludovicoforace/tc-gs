@@ -20,6 +20,12 @@ body {
   font-size: ${({theme}) => theme.fontSizes.regular};
   color: ${({theme}) => theme.colors.text};
 }
+h1, span {
+  text-shadow: 1px 1px 20px ${({theme}) => theme.bgs.azure};
+}
+h1, p, span, a {
+  letter-spacing: 5px;
+}
 `
 
 const GlobalStyle = () => {

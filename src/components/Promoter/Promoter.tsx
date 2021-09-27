@@ -24,7 +24,7 @@ line-height: normal;
 `
 
 const AnchorButton = styled(SAnchorButton)`
-width: 60%;
+width: 50%;
 margin-left: auto;
 margin-right: auto;
 `

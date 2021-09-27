@@ -1,5 +1,5 @@
 export const darkTheme = {
-  fontFamily: 'Ubuntu, sans-serif',
+  fontFamily: 'Voltaire, sans-serif',
   fontSizes: {
     regular: '39px',
     large: '56px',
@@ -8,7 +8,7 @@ export const darkTheme = {
   bgs: {
     darker: '#020605',
     lighter: '#38383d',
-    purple: '#c538e9'
+    azure: '#13c8f3'
   },
   colors: {
     text: '#f9f9fa'
