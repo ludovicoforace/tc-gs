@@ -14,12 +14,6 @@ html {
 body {
   margin: 0;
 }
-h1 {
-  margin: 0;
-}
-p {
-  margin: 0;
-}
 button {
   border: 0;
   padding: 0;
