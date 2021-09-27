@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import ReactCountdown, { CountdownRenderProps } from 'react-countdown'
+import ReactCountdown, { CountdownRenderProps, CountdownTimeDelta } from 'react-countdown'
 
 const Span = styled.span<{countdownCompleted: boolean}>`
 font-size: ${({theme}) => theme.fontSizes.large};
@@ -20,13 +20,15 @@ const renderer = ({ formatted: { hours, minutes, seconds }, completed }: Countdo
 
 interface Props {
   milliseconds: number
+  onTick: (props: CountdownTimeDelta) => void
   onComplete: () => void
 }
 
-const Countdown = ({ milliseconds, onComplete }: Props) => (
+const Countdown = ({ milliseconds, onTick, onComplete }: Props) => (
   <ReactCountdown
     date={Date.now() + milliseconds}
     renderer={renderer}
+    onTick={onTick}
     onComplete={onComplete}
   />
 )
