@@ -12,7 +12,11 @@ const server = http.createServer(async (req, res) => {
 
     res.writeHead(200, headers)
     res.end(JSON.stringify(data))
+    return
   }
+
+  res.writeHead(401)
+  res.end('Error')
 })
 
 server.listen(PORT, () => {

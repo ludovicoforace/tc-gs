@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { PROTOCOL } from "../../constants/locations"
 import useGetData from "../../hooks/useGetData"
 import SAnchorButton from "../../styled/AnchorButton"
 
@@ -39,7 +40,7 @@ const Promoter = () => {
     <Section>
       <Header>Get your free £{cash_value} now</Header>
       <P>{countdown_duration}</P>
-      <AnchorButton href={optin_URL}>Opt in</AnchorButton>
+      <AnchorButton href={`${PROTOCOL}://${optin_URL}`}>Opt in</AnchorButton>
     </Section>
   )
 }
