@@ -8,6 +8,9 @@ import { convertHMSToMS } from "../../utils"
 
 const Section = styled.section`
 text-align: center;
+min-height: 306px;
+position: relative;
+min-height: 306px;
 
 > * {
   margin: 60px 0;
