@@ -1,10 +1,10 @@
+import { useEffect, useState } from 'react'
 import { createGlobalStyle } from 'styled-components'
+import { getIsScreenRetina } from '../utils'
 import { Theme } from '../types'
 
 import regularBackground from '../assets/background_scale_1x.jpeg'
 import retinaBackground from '../assets/background_scale_2x.jpeg'
-import { getIsScreenRetina } from '../utils'
-import { useEffect, useState } from 'react'
 
 const StyledGlobal = createGlobalStyle<{theme: Theme, backgroundImage: string}>`
 html {
