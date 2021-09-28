@@ -2,6 +2,16 @@ import { render } from "@testing-library/react"
 import { getIsScreenRetina } from "../../utils"
 import Header from "./Header"
 
+// Jest official workaround, link below
+// https://jestjs.io/docs/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom
+Object.defineProperty(window, 'matchMedia', {
+  writable: true,
+  value: () => ({
+    addEventListener: jest.fn(),
+    removeEventListener: jest.fn(),
+  }),
+});
+
 jest.mock('../../utils', () => ({
   getIsScreenRetina: jest.fn()
 }))
